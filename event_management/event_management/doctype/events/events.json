@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EE.#####",
+ "creation": "2025-03-29 12:26:26.630401",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "event_name",
+  "text_editor_ortu",
+  "event_date",
+  "column_break_ehlf",
+  "event_type",
+  "start_date__time",
+  "end_date__time",
+  "venue",
+  "organizer",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "label": "Event Name"
+  },
+  {
+   "fieldname": "text_editor_ortu",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "column_break_ehlf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "event_type",
+   "fieldtype": "Select",
+   "label": "Event Type",
+   "options": "Conference\nWorkshop\nSeminar\nWebinar\netc"
+  },
+  {
+   "fieldname": "start_date__time",
+   "fieldtype": "Datetime",
+   "label": "start Date  Time"
+  },
+  {
+   "fieldname": "end_date__time",
+   "fieldtype": "Datetime",
+   "label": "End Date  Time"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "organizer",
+   "fieldtype": "Link",
+   "label": "Organizer",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Draft\nPublished\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "event_date",
+   "fieldtype": "Date",
+   "label": "Event Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-02 12:13:25.031141",
+ "modified_by": "Administrator",
+ "module": "Event Management",
+ "name": "Events",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

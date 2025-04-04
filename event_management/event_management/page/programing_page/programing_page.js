@@ -26,7 +26,7 @@ frappe.pages['programing-page'].on_page_load = function(wrapper) {
 
             let html = `
                 <table class="table table-bordered">
-                    <thead>
+                    <thead> 
                         <tr>
                             <th>Item Name</th>
                             <th>Item Group</th>
@@ -39,17 +39,19 @@ frappe.pages['programing-page'].on_page_load = function(wrapper) {
             `;
 
             items.forEach(item => {
+                const status = item.disabled ? 'Disabled' : 'Enabled';
+            
                 html += `
                     <tr>
                         <td>${item.name}</td>
                         <td>${item.item_group}</td>
-                        <td>${item.item_code }</td>
-                        <td>${item.item_status}</td>
+                        <td>${item.item_code || '-'}</td>
+                        <td>${status}</td>
                         <td><a class="btn btn-sm btn-primary" href="/app/item/${item.name}">View</a></td>
                     </tr>
                 `;
             });
-
+            
             html += `</tbody></table>`;
             $('#item-table').html(html);
         }
